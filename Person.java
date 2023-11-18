@@ -48,11 +48,10 @@ public class Person {
         this.emailAddress = emailAddress;
     }
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", emailAddress='" + emailAddress + '\'' +
-                '}';
+        return "Person\n" +
+                " Name" + name + '\'' +
+                "Address" + address + '\'' +
+                "Phone Number" + phoneNumber + '\'' +
+                "Email Address" + emailAddress;
 } }
 

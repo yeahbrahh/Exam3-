@@ -1,11 +1,12 @@
 public abstract class Employee extends Person {
 
-    private String department;
-    private double salary;
-    private int hireDate;
+    public String department;
+    public double salary;
+    public int hireDate;
 
-    public Employee(String name, String address, String phoneNumber, String emailAddress) {
+    public Employee(String name, String address, String phoneNumber, String emailAddress, String department, double salary, int hireDate) {
         super(name, address, phoneNumber, emailAddress);
+
     }
 
     public String getDepartment() {
@@ -36,15 +37,14 @@ public abstract class Employee extends Person {
     }
     @Override
     public String toString() {
-        return "Employee{" +
-                "name='" + getName() + '\'' +
-                ", address='" + getAddress() + '\'' +
-                ", phoneNumber='" + getPhoneNumber() + '\'' +
-                ", emailAddress='" + getEmailAddress() + '\'' +
-                ", department='" + department + '\'' +
-                ", salary=" + salary +
-                ", hireDate=" + hireDate +
-                '}';
+        return "Employee " +
+                " Name: " + getName() + '\n' +
+                "Address: " + getAddress() + '\n' +
+                " Phone Number: " + getPhoneNumber() + '\n' +
+                " Email Address :" + getEmailAddress() + '\n' +
+                " Department: " + getDepartment() + '\n' +
+                "Salary: " + getSalary() +
+                "Hire Date: " + getHireDate();
     }
 
 }
