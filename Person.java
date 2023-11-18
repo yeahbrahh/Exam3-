@@ -30,7 +30,7 @@ public class Person {
         this.address = address;
     }
 
-    // Getter and Setter methods for PhoneNumber
+    // Getter and Setter methods for Phone Number
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -39,7 +39,7 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
-    // Getter and Setter methods for EmailAddress
+    // Getter and Setter methods for Email Address
     public String getEmailAddress() {
         return emailAddress;
     }
@@ -47,11 +47,7 @@ public class Person {
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
-    public String toString() {
-        return "Person\n" +
-                " Name" + name + '\'' +
-                "Address" + address + '\'' +
-                "Phone Number" + phoneNumber + '\'' +
-                "Email Address" + emailAddress;
-} }
+
+
+}
 

@@ -5,6 +5,8 @@ public class Faculty extends Employee {
 
     public Faculty(String name, String address, String phoneNumber, String emailAddress, String department, double salary, int hireDate, String officeHours, String rank) {
         super(name, address, phoneNumber, emailAddress, department, salary, hireDate);
+        this.officeHours = officeHours;
+        this.rank = rank;
     }
 
         public String getOfficeHours () {
@@ -24,15 +26,15 @@ public class Faculty extends Employee {
         }
         @Override
         public String toString () {
-            return "Faculty\n" +
+            return "\nFaculty (\n" +
                     " Name: " + getName() + '\n' +
                     "Address: " + getAddress() + '\n' +
                     "Phone Number: " + getPhoneNumber() + '\n' +
                     "Email Address: " + getEmailAddress() + '\n' +
                     "Department " + getDepartment() + '\n' +
-                    "Salary: " + getSalary() + '\n' +
+                    "Salary: " + '$' + getSalary() + '\n' +
                     "Hire Date: " + getHireDate() + '\n' +
                     "Office Hours: " + getOfficeHours() + '\n' +
-                    "Rank" + getRank();
+                    "Rank: " + getRank() + ')';
         }
     }

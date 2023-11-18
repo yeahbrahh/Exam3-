@@ -3,6 +3,7 @@ public class Staff extends Employee {
 
     public Staff(String name, String address, String phoneNumber, String emailAddress, String title, String department, double salary, int hireDate) {
         super(name, address, phoneNumber, emailAddress, department, salary, hireDate);
+        this.title = title;
     }
 
     public String getTitle() {
@@ -14,14 +15,14 @@ public class Staff extends Employee {
    }
     @Override
     public String toString() {
-        return "Staff\n" +
+        return "\nStaff (\n" +
                 " Name: " + getName() + '\n' +
                 "Address: " + getAddress() + '\n' +
                 "Phone Number: " + getPhoneNumber() + '\n' +
                 "Email Address: " + getEmailAddress() + '\n' +
-                "Salary: " + getSalary() +
+                "Salary: " + '$' +getSalary() + '\n' +
                 "Hire Date: " + getHireDate()+ '\n' +
-                "Title: " + getTitle();
+                "Title: " + getTitle() + ')';
     }
 }
 

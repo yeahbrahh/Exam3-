@@ -4,6 +4,7 @@ public class Student extends Person {
     // Constructor
     public Student(String name, String address, String phoneNumber, String emailAddress, String status) {
         super(name, address, phoneNumber, emailAddress);
+        this.status = status;
     }
 
     // Getter and Setter methods for Status
@@ -16,12 +17,12 @@ public class Student extends Person {
     }
     @Override
     public String toString() {
-        return "Student" +
+        return "\nStudent (\n" +
                 " Name: " + getName()+ '\n' +
                 "Address: " + getAddress() + '\n' +
                 "Phone Number: " + getPhoneNumber() + '\n' +
                 "Email Address: " + getEmailAddress() + '\n' +
-                "Status:" + getStatus();
+                "Status: " + getStatus() + ')';
     }
 }
 

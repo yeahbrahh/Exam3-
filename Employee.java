@@ -1,11 +1,14 @@
 public abstract class Employee extends Person {
 
-    public String department;
-    public double salary;
-    public int hireDate;
+    private String department;
+    private double salary;
+    private int hireDate;
 
     public Employee(String name, String address, String phoneNumber, String emailAddress, String department, double salary, int hireDate) {
         super(name, address, phoneNumber, emailAddress);
+        this.department = department;
+        this.salary = salary;
+        this.hireDate = hireDate;
 
     }
 
@@ -35,16 +38,21 @@ public abstract class Employee extends Person {
 
 
     }
+
+    public String dateFormat() {
+        return hireDate + "%02d/%02d/%02d";
+    }
+
     @Override
     public String toString() {
-        return "Employee " +
+        return "\nEmployee ( \n" +
                 " Name: " + getName() + '\n' +
                 "Address: " + getAddress() + '\n' +
                 " Phone Number: " + getPhoneNumber() + '\n' +
                 " Email Address :" + getEmailAddress() + '\n' +
                 " Department: " + getDepartment() + '\n' +
-                "Salary: " + getSalary() +
-                "Hire Date: " + getHireDate();
+                "Salary: " + '$' + getSalary() +
+                "Hire Date: " + dateFormat() + ')';
     }
 
 }

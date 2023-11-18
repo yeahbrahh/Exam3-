@@ -12,12 +12,12 @@ public class TestSchoolRecords {
         Student student2 = new Student("Kevin Gates", "456 Oak St", "555-5678", "idgt@website.com", "Sophomore");
 
         // Create two Faculty objects
-        Faculty faculty1 = new Faculty("Dr. Who", "789 Pine St", "555-9876", "whoyou@frcc.com", "Science",59000.74, 6/11/2022,"11 to 1","Junior") ;
-        Faculty faculty2 = new Faculty("Professor Longhair", "234 Elm St", "555-4321", "tipitina@frcc.com", "Ministry of Truth ", 1.0,9/22/2020,"4 to 6","Senior");
+        Faculty faculty1 = new Faculty("Dr. Who", "789 Pine St", "555-9876", "whoyou@frcc.com", "Science", 59000.74, 6 / 11 / 2022, "11 to 1", "Junior");
+        Faculty faculty2 = new Faculty("Professor Longhair", "234 Elm St", "555-4321", "tipitina@frcc.com", "Ministry of Truth ", 1.0, 9 / 22 / 2020, "4 to 6", "Senior");
 
         // Create two Staff objects
-        Staff staff1 = new Staff("Alice Cooper", "789 Pine St", "555-1111", "alice@gmail.com", "Secretary", "Ministry of Peace", 222.00,12/4/1998);
-        Staff staff2 = new Staff("Steve Miller", "234 Elm St", "555-2222", "joker@gmail.com", "Bossman", "Ministry of Love", 13.00, 11/21/3200);
+        Staff staff1 = new Staff("Alice Cooper", "789 Pine St", "555-1111", "alice@gmail.com", "Secretary", "Ministry of Peace", 222.00, 121113);
+        Staff staff2 = new Staff("Steve Miller", "234 Elm St", "555-2222", "joker@gmail.com", "Boss-Man", "Ministry of Love", 13.00, 444);
 
         // Add persons to the list
         persons.add(student1);
